@@ -28,7 +28,8 @@ class HistoryController {
             },
             order: [
                 ['date', 'DESC']
-            ]
+            ],
+            limit:10
         })
         .then( result => {
             response.status(200).json(result)
